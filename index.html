@@ -16,8 +16,9 @@
   </head>
   <body>
     <header>
-      <nav class="container">
-        <div class="logo">DevTruzers</div>
+      <nav>
+       <div class="container-nav">
+         <div class="logo">DevTruzers</div>
         <button
           class="menu-btn"
           onclick="document.querySelector('nav').classList.toggle('open')"
@@ -32,10 +33,12 @@
           <li><a href="#contact">Contact</a></li>
           <button class="btn">Request Quote</button>
         </ul>
+       </div>
       </nav>
     </header>
-    <div class="hero container" id="home">
-      <div class="section1">
+    <div class="hero" id="home">
+      <div class="modified-container">
+        <div class="section1">
         <p class="ppp">Fastest And Most Lightweight WP Theme</p>
         <h1>Create Amazing Business Websites</h1>
         <p class="p">
@@ -45,10 +48,13 @@
         </p>
         <button class="btn">Book a Meeting</button>
       </div>
-      <div class="section2"></div>
+       <div class="section2"></div>
+      </div>
+     
     </div>
     <div class="sec2 " id="services">
-      <div class="sec2-1">
+      <div class="container">
+            <div class="sec2-1">
         <h2>Our Services</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse
@@ -107,9 +113,11 @@
           </p>
         </div>
       </div>
+      </div>
     </div>
     <div class="portfolio" id="about">
-      <div class="sec2-1">
+     <div class="container">
+       <div class="sec2-1">
         <h2>Our Portfolio</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse
@@ -135,6 +143,7 @@
           alt="4"
         />
       </div>
+     </div>
     </div>
     <!-- <div class="customers">
       <div class="sec2-1">
@@ -152,7 +161,8 @@
       </div>
     </div> -->
     <div class="review" id="reviews">
-      <div class="sec2-1">
+      <div class="container">
+        <div class="sec2-1">
         <h2>Customer Reviews</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
@@ -176,9 +186,11 @@
           </p> -->
         </div>
       </div>
+      </div>
     </div>
-    <div class="leadership sec " id="leadership">
-      <div class="sec2-1">
+    <div class="leadership " id="leadership">
+    <div class="container">
+        <div class="sec2-1">
         <h2>Meet Our Leadership</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse
@@ -212,8 +224,10 @@
         </div>
       </div>
     </div>
+    </div>
     <div class="start-project" id="contact">
-      <div class="div1">
+     <div class="start-project-child">
+       <div class="div1">
         <h2>Would you like to start a project with us?</h2>
         <p>
           Etiam erat lectus, finibus eget commodo quis, tincidunt eget leo.
@@ -224,9 +238,11 @@
       <div class="div2">
         <button class="btn btn2">Get a Quote</button>
       </div>
+     </div>
     </div>
     <footer id="footer">
-      <div class="footer-content">
+
+        <div class="footer-content">
         <div class="footerleft">
           <div class="footer-logo">DevTruzers</div>
           <p>
@@ -270,7 +286,7 @@
         </div>
       </div>
     </footer>
-    <div class="copyright container">
+    <div class="copyright">
       <p>&copy; 2026 DevTruzers. All rights reserved.</p>
     </div>
     <script src="script.js"></script>

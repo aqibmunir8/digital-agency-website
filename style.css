@@ -10,6 +10,7 @@
   --text-color: #54556f;
   --text-black: #2a2a2a;
   --spacing-standard: 80px;
+  --spacing-standard-40: 40px;
 }
 
 /* Global Setup */
@@ -53,11 +54,11 @@ h3 {
   margin: auto;
 }
 
-.container {
+/* .container {
   max-width: 1100px;
   margin: auto;
   padding: 0 16px;
-}
+} */
 
 header {
   position: absolute;
@@ -65,14 +66,30 @@ header {
   top: 0;
   /* padding: 20px 0; */
   z-index: 10;
+  padding:0 5% 0;
   /* color: #fff; */
 }
 
 nav {
+    /* 1. Set the maximum width the content is allowed to grow */
+  max-width: 1200px; 
+  
+  
+  /* 2. Ensure it takes full width on screens smaller than 1200px */
+  width: 100%;       
+  
+  margin: 0 auto; /* Center the container on larger screens */
+  
+  padding: 0px 20px; /* Keeps content away from mobile edges */
+  
+}
+
+.container-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  /* gap: 10px; */
   align-items: center;
-  padding: 30px 5%;
+  padding: 30px 0px;
   /* background-color: var(--text-black); */
 }
 
@@ -124,15 +141,33 @@ nav ul li a {
 }
 
 .hero {
-  display: flex;
-  min-height: 100vh;
+   /* display: flex; */
+  min-height: 100vh; 
   background:
     linear-gradient(rgba(36, 42, 86, 0.8), rgba(36, 42, 86, 0.85)),
     url("https://websitedemos.net/agency-02/wp-content/uploads/sites/30/2020/06/home-hero-bg.jpg")
       center/cover;
-  padding: 150px 0 80px;
+  /* padding: 150px 0 80px; */
   color: #fff;
-  padding: var(--spacing-standard) 5%;
+  padding: var(--spacing-standard) 5% 0;
+}
+
+.modified-container {
+    /* 1. Set the maximum width the content is allowed to grow */
+  max-width: 1200px; 
+  
+  
+  /* 2. Ensure it takes full width on screens smaller than 1200px */
+  width: 100%;   
+
+  
+  margin: 0 auto; /* Center the container on larger screens */
+  
+  padding: 40px 20px; /* Keeps content away from mobile edges */
+
+   display: flex;
+   /* background-color: #b0b0b0; */
+  
 }
 
 .section1 {
@@ -197,14 +232,8 @@ nav ul li a {
 .sec2 {
   /* min-height: 120vh; */
   background-color: var(--bg-color2);
-  /* background:
-    linear-gradient(rgba(36, 42, 86, 0.8), rgba(36, 42, 86, 0.85)),
-    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
-      center/cover; */
-  padding: 60px 5% 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* padding: 60px 5% 80px; */
+
 }
 
 .sec2-1 h2 {
@@ -227,7 +256,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   /* background-color: #242a56; */
 }
 
@@ -269,14 +298,9 @@ nav ul li a {
 /* Portfolio */
 
 .portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
   background-color: var(--bg-white);
   color: #fff;
-  padding: 70px 5%;
+  padding:0 5% 0;
 }
 
 .portfolio h2 {
@@ -311,7 +335,7 @@ nav ul li a {
 .review {
   background-color: #eff2ff;
   color: #fff;
-  padding: 40px 5%;
+  /* padding: 40px 5%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -352,6 +376,7 @@ nav ul li a {
 .leadership {
   background-color: var(--bg-color1);
   color: var(--text-color);
+  
 }
 
 .leadership h2 {
@@ -375,6 +400,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   width: 90%;
 }
 
@@ -391,6 +417,31 @@ nav ul li a {
 /* start-project */
 /*  */
 
+.start-project-child {
+   display: flex;
+  justify-content:space-between;
+  /* background:
+    linear-gradient(rgba(36, 42, 86, 0.8), rgba(36, 42, 86, 0.85)),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
+      center/cover; */
+  /* padding: 150px 0 80px; */
+  background-color: #eff2ff;
+  color: var(--dark-purle);
+
+    max-width: 1200px; 
+  
+  
+  /* 2. Ensure it takes full width on screens smaller than 1200px */
+  width: 100%;       
+  
+  margin: 0 auto; /* Center the container on larger screens */
+  
+  padding: 40px 20px; /* Keeps content away from mobile edges */
+
+
+
+}
+
 .start-project {
   display: flex;
   /* background:
@@ -400,7 +451,6 @@ nav ul li a {
   /* padding: 150px 0 80px; */
   background-color: #eff2ff;
   color: var(--dark-purle);
-  padding: 70px 3%;
 }
 
 .div1 {
@@ -416,7 +466,8 @@ nav ul li a {
   /* make this div in the center */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 19px;
 }
 
 /*  */
@@ -430,9 +481,14 @@ footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* max-width: 1200px;  */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1104px) {
+  .container{
+    padding: 40px 50px; /* Keeps content away from mobile edges */
+  }
+
   .section1 {
     padding-top: 40px;
     flex: 3;
@@ -451,6 +507,7 @@ footer-content {
 
 /* Mobile: 1 Column (Screens under 768px) */
 @media (max-width: 678px) {
+
   .section2 {
     flex: 0;
   }
@@ -474,6 +531,7 @@ footer-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
   }
 
   .div1 {
@@ -495,6 +553,7 @@ footer {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+  /* padding: 0 19px 0; */
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -586,6 +645,8 @@ footer {
 
 /* --- Responsive Layout (Mobile & Tablets) --- */
 @media (max-width: 768px) {
+
+  
   .footer-content {
     flex-direction: column;
     gap: 40px;
@@ -650,10 +711,16 @@ footer {
   /* 1. Set the maximum width the content is allowed to grow */
   max-width: 1200px; 
   
+  
   /* 2. Ensure it takes full width on screens smaller than 1200px */
   width: 100%;       
   
   margin: 0 auto; /* Center the container on larger screens */
   
-  padding: 0 20px; /* Keeps content away from mobile edges */
+  padding: 40px 20px; /* Keeps content away from mobile edges */
+
+   display: flex;
+  flex-direction: column;  /* Force elements to stack top-to-bottom instead of left-to-right */
+  align-items: center;     /* Centers everything horizontally inside the column */
+  text-align: center;      /* Centers the actual text inside the h2 and p tags */
 }
